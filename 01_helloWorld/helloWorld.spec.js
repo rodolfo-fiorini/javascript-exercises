@@ -1,7 +1,4 @@
-const helloWorld = require('./helloWorld');
-
-describe('Hello World', function() {
-  test('says "Hello, World!"', function() {
-    expect(helloWorld()).toEqual('Hello, World!');
-  });
+const getAboutUsLink = require("./helloWorld");
+test("Returns about-us for english language", () => {
+    expect(getAboutUsLink("en-US")).toBe("/about-us");
 });
